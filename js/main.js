@@ -2,12 +2,20 @@ function onoff() {
   currentvalue = document.getElementById('onoff').value;
   if(currentvalue == "Off"){
     document.getElementById("onoff").value="On";
+    $('body').toggleClass('light dark')
     clickOn.play();
+    // document.style.backgroundColor = "#FFFFFF"s
   }else{
     document.getElementById("onoff").value="Off";
+    $('body').toggleClass('light dark')
     clickOff.play();
+    // document.style.backgroundColor = "#000000"
   }
 }
+
+// var lightsOn =
+
+// var lightsOff =
 
 var clickOn = new Audio();
 clickOn.src = "http://soundbible.com/mp3/Click On-SoundBible.com-1697535117.mp3";
