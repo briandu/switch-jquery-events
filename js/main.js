@@ -3,11 +3,13 @@ function onoff() {
   if(currentvalue == "Off"){
     document.getElementById("onoff").value="On";
     $('body').toggleClass('light dark')
+    $(':button').toggleClass('on off')
     clickOn.play();
     // document.style.backgroundColor = "#FFFFFF"s
   }else{
     document.getElementById("onoff").value="Off";
     $('body').toggleClass('light dark')
+    $(':button').toggleClass('on off')
     clickOff.play();
     // document.style.backgroundColor = "#000000"
   }
