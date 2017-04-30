@@ -4,20 +4,16 @@ function onoff() {
     document.getElementById("onoff").value="On";
     $('body').toggleClass('light dark')
     $(':button').toggleClass('on off')
+    $('.status').text("It's so bright in here!")
     clickOn.play();
-    // document.style.backgroundColor = "#FFFFFF"s
   }else{
     document.getElementById("onoff").value="Off";
     $('body').toggleClass('light dark')
     $(':button').toggleClass('on off')
+    $('.status').text('Hey, who turned off the lights?')
     clickOff.play();
-    // document.style.backgroundColor = "#000000"
   }
 }
-
-// var lightsOn =
-
-// var lightsOff =
 
 var clickOn = new Audio();
 clickOn.src = "http://soundbible.com/mp3/Click On-SoundBible.com-1697535117.mp3";
